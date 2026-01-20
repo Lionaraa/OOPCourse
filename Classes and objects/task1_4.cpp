@@ -14,7 +14,7 @@ public:
     unsigned get_minutes() {
         return time_current / 60 % 60;
     }
-    unsigned get_second() {
+    unsigned get_seconds() {
         return time_current % 60;
     }
 };
@@ -39,7 +39,7 @@ int main() {
 
     unsigned hours = ptr_cd->get_hours();
     unsigned minutes = ptr_cd->get_minutes();
-    unsigned seconds = ptr_cd->get_second();
+    unsigned seconds = ptr_cd->get_seconds();
     // Вывод формала
    std::cout << output(hours) << ":" << output(minutes) << ":" << output(seconds); 
    delete ptr_cd;
